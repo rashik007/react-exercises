@@ -16,6 +16,10 @@ function Search() {
   // console.log(items);
   return (
     <div className="search-body">
+      <h1>
+        React code to build a simple search filter functionality to display a
+        filtered list based on the search query entered by the user.
+      </h1>
       <input
         className="input-search"
         type=""

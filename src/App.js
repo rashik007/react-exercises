@@ -8,7 +8,7 @@ import Accordion from "./components/Accordion";
 
 function App() {
   return (
-    <div>
+    <div className="body_wrapper">
       <Search />
       <Counter />
       <MapArr />
