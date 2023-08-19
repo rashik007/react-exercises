@@ -6,14 +6,14 @@ function Search() {
   const [filteredItems, setFilteredItems] = React.useState(Data);
 
   function filterFruit(event) {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     const searchQuery = event.target.value.toLowerCase();
     const filteredItems = items.filter((mm) =>
       mm.toLowerCase().includes(searchQuery)
     );
     setFilteredItems(filteredItems);
   }
-  console.log(items);
+  // console.log(items);
   return (
     <div className="search-body">
       <input
