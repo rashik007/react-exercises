@@ -7,7 +7,7 @@ function MapArr() {
     return data.map((item, index) => <li key={index}>{item}</li>);
   }
 
-  console.log(data);
+  // console.log(data);
   return (
     <div className="counter-body">
       <h1>Display a list in React</h1>

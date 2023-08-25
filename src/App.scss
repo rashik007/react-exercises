@@ -127,3 +127,70 @@ p.block {
 p.none {
   display: none;
 }
+
+//image slider buttons
+.btn--imageSlider {
+  background: grey;
+  padding: 10px;
+  // border: 0px;
+  outline: 1px solid rgb(92, 92, 92);
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  border: 1px transparent white;
+  font-size: 20px;
+}
+
+.image--box {
+  width: 100%;
+  margin: auto;
+
+  .image--container {
+    text-align: center;
+    position: relative;
+    .image--slider--single {
+      width: 70%;
+      margin-left: auto;
+      max-height: 600px;
+      object-fit: cover;
+    }
+
+    .btn--imageSlider {
+      position: absolute;
+    }
+
+    .btn--previous {
+      top: 50%;
+      left: 100px;
+    }
+
+    .btn--next {
+      top: 50%;
+      right: 100px;
+    }
+  }
+}
+
+.image--box {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+}
+
+.image--container.active {
+  display: block;
+  width: 100%;
+
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  margin-left: auto;
+  margin-right: auto;
+}
+.image--container {
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+  transform: translateX(100%); /* Initially move the images to the right */
+  transition: transform 0.5s ease-in-out;
+}

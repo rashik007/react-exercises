@@ -5,6 +5,8 @@ import Search from "./components/Search";
 import Counter from "./components/Counter";
 import MapArr from "./components/MapArr";
 import Accordion from "./components/Accordion";
+import ImageSlider from "./components/ImageSlider";
+import Checklist from "./components/Checklist";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Counter />
       <MapArr />
       <Accordion />
+      <ImageSlider />
+      <Checklist />
     </div>
   );
 }
