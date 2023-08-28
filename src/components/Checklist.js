@@ -12,9 +12,31 @@
 import React from "react";
 
 function Checklist() {
+  const checkList = [];
+  const [checkListItem, setCheckListItem] = React.useState("");
+
+  function takeInput(event) {
+    console.log(event.target.value);
+    // const inputVal = event.target.value;
+    setCheckListItem(event.target.value);
+  }
+  console.log(checkList);
+  console.log(checkListItem);
+
   return (
     <div className="counter-body">
       <h1>checklist Options</h1>
+      <h3 className="">Enter items to add to the chekclist</h3>
+      <input type="text" onChange={takeInput} id="getInput" />
+      <button>register a checkList</button>
+      <ul className="item--entry--checklist">
+        {checkList}
+        {checkList.map((item, index) => (
+          <li className="" id={index}>
+            {item}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
